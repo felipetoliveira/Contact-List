@@ -63,7 +63,7 @@ body {
 
 .content-scroll {
     background-color: white;
-    max-height: 360px;
+    max-height: 380px;
     width: 90%;
     max-width: 450px;
     overflow-y: auto;
@@ -102,14 +102,26 @@ body {
     justify-content: space-around;
     gap: 8px;
     padding: 0 15px 0 0;
-    opacity: 0 ;
+    opacity: 0;
 
 }
 
-.content__list:hover .content__buttom{
+.content__list:hover .content__buttom {
     opacity: 0.3;
 
 }
 
 
- 
+@media screen and (max-width: 1024px) {
+
+    .content__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .content__image {
+        padding: 5px;
+    }
+
+}
